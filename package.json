@@ -1,0 +1,31 @@
+{
+  "name": "convert-file.online",
+  "version": "1.0.0",
+  "main": "server.js",
+  "license": "MIT",
+  "imports": {
+    "#src/*": "./src/*"
+  },
+  "scripts": {
+    "webpack": "webpack --config webpack.config.js",
+    "webpack-watch": "webpack --config webpack.config.js --watch",
+    "develop": "yarn webpack && nodemon server.js",
+    "nodeamon-watch": "nodemon --watch './public/style.css' server.js"
+  },
+  "type": "module",
+  "dependencies": {
+    "express": "^4.18.1",
+    "fluent-ffmpeg": "^2.1.2",
+    "mini-css-extract-plugin": "^2.6.1",
+    "multer": "^1.4.5-lts.1",
+    "nodemon": "^2.0.19"
+  },
+  "devDependencies": {
+    "css-loader": "^6.7.1",
+    "node-sass": "^7.0.1",
+    "sass": "^1.54.0",
+    "sass-loader": "^13.0.2",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  }
+}

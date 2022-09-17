@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Конвертировать файл WebP формата в PNG онлайн</title>
+    <meta
+      name="Description"
+      content="Беспланый конвертер изображений WebP формата в формат PNG. Полностью бесплатно. За раз до 30 изображений, пакетное скачивание. "
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div
+      id="formats"
+      data-oldFilesFormat=".webp"
+      data-doneFilesFormat=".png"
+      display="none"
+    ></div>
+    <svg display="none">
+      <symbol id="delete-icon" viewBox="0 0 320 512">
+        <g>
+          <path
+            d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"
+          />
+        </g>
+      </symbol>
+    </svg>
+    <img
+      src="logo/webp2png.svg"
+      alt="Страница конвертации webp в png"
+      class="logo"
+      onclick="document.location='/'"
+    />
+    <div class="navigation">
+      <nav>
+        <a href="/webp2jpg">WebP => JPG</a>
+        <a class="disabled">WebP => PNG</a>
+      </nav>
+    </div>
+    <h1>Конвертирование файлов WebP в PNG</h1>
+    <div class="explanation">
+      <p>
+        Конвертируйте бесплатно и без регистрации до 30 файлов одновременно.
+        Есть возможность скачивания по одному файлу, либо сразу все в архиве.
+      </p>
+      <p>Кратко о том <a href="/">что такое webp</a>.</p>
+    </div>
+
+    <div class="main_conteiner">
+      <div class="base_btns">
+        <input id="files" type="file" accept="png" multiple accept="" />
+        <button id="uploadImg" class="button upload"><b>ЗАГРУЗИТЬ</b></button>
+        <button id="clean" class="button delete" disabled>
+          <b>УДАЛИТЬ</b>
+        </button>
+      </div>
+      <div class="dragAndDrop">
+        <b>Перетащите файлы сюда</b>
+      </div>
+      <div class="slider"></div>
+      <a id="download" href="" download="" style="display: none"></a>
+      <button id="downZip" class="button down_zip" href="" download="" disabled>
+        ПОДГОТОВИТЬ ZIP
+      </button>
+    </div>
+
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="bundle.js"></script>
+  </body>
+</html>
