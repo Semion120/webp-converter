@@ -10,7 +10,8 @@
     "webpack": "webpack --config webpack.config.js",
     "webpack-watch": "webpack --config webpack.config.js --watch",
     "develop": "yarn webpack && nodemon server.js",
-    "nodeamon-watch": "nodemon --watch './public/style.css' server.js"
+    "nodeamon-watch": "nodemon --watch './public/style.css' server.js",
+    "deploy": "yarn webpack && nodemon server.js"
   },
   "type": "module",
   "dependencies": {
