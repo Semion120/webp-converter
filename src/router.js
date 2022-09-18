@@ -80,4 +80,9 @@ app.get('/webp2jpg', (req, res) => {
   res.sendFile(indexPath);
 });
 
+app.use(function (req, res, next) {
+  res.status(404);
+  const error404 = path.join(viewsPath, '404.html');
+  res.sendFile(error404);
+});
 export default app;
