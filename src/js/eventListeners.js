@@ -129,5 +129,12 @@ function checkFiles(files) {
       errors += `${file.name} больше 50 МБ\n`;
     }
   }
+
+  for (const file of files) {
+    const format = extOld.replace('.', '');
+    if (file.type != 'image/' + format) {
+      errors += `У ${file.name} неверный тип изображения. Пришлите в формате ${format}\n`;
+    }
+  }
   return errors;
 }
