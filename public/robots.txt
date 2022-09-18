@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+sitemap: https://webp.convert-file.ru/sitemap.xml

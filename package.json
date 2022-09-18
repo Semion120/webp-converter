@@ -19,7 +19,8 @@
     "fluent-ffmpeg": "^2.1.2",
     "mini-css-extract-plugin": "^2.6.1",
     "multer": "^1.4.5-lts.1",
-    "nodemon": "^2.0.19"
+    "nodemon": "^2.0.19",
+    "sitemap": "^7.1.1"
   },
   "devDependencies": {
     "css-loader": "^6.7.1",
