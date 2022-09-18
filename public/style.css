@@ -466,7 +466,7 @@ body h1 {
 }
 .choices .choice-item .border {
   border: 1px solid rgba(0, 0, 0, 0.67);
-  border-radius: 30px;
+  border-radius: 20px;
   padding: 5px;
 }
 .choices .choice-item .border:hover {
