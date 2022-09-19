@@ -3,7 +3,7 @@ import process from 'process';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 
 export default {
-  mode: 'development',
+  mode: 'production',
   entry: './src/index.js',
   resolve: {
     alias: { src: path.resolve(process.cwd(), 'src') },
