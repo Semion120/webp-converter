@@ -80,6 +80,16 @@ app.get('/webp2jpg', (req, res) => {
   res.sendFile(indexPath);
 });
 
+app.get('/jpg2webp', (req, res) => {
+  const indexPath = path.join(viewsPath, 'jpg2webp.html');
+  res.sendFile(indexPath);
+});
+
+app.get('/png2webp', (req, res) => {
+  const indexPath = path.join(viewsPath, 'png2webp.html');
+  res.sendFile(indexPath);
+});
+
 app.use(function (req, res, next) {
   res.status(404);
   const error404 = path.join(viewsPath, '404.html');
