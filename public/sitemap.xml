@@ -13,4 +13,10 @@
     <url>
         <loc>https://webp.convert-file.ru/webp2png</loc>
     </url>
+    <url>
+        <loc>https://webp.convert-file.ru/png2webp</loc>
+    </url>
+    <url>
+        <loc>https://webp.convert-file.ru/jpg2webp</loc>
+    </url>
 </urlset>
